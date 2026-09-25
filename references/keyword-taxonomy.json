@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "description": "Generic contact hygiene taxonomy synthesized from public CRM data-quality guidance and observed B2B contact-list cleanup patterns.",
+  "exclude_categories": {
+    "financial_services": {
+      "label": "金融/贷款/保险",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["客户经理", "信贷", "贷款", "放贷", "放款", "借款", "融资", "信用卡", "理财", "金融", "保险", "保单", "催收", "征信", "资金周转"]
+    },
+    "tax_bookkeeping": {
+      "label": "财税/代账/工商注册",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["财税", "代理记账", "工商注册", "税务筹划", "税收洼地", "注册公司"]
+    },
+    "real_estate": {
+      "label": "房产/中介",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["房产", "链家", "中介", "地产", "楼盘", "置业", "租房", "二手房", "房屋中介"]
+    },
+    "training_education": {
+      "label": "培训/教育/书法",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["培训", "书法", "教育", "课程", "辅导", "补课", "教培", "招生", "驾校", "考级", "琴行", "艺术", "舞蹈", "美术", "音乐", "围棋", "总裁班", "升学"]
+    },
+    "recruitment": {
+      "label": "招聘/兼职/猎头",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["招聘", "猎头", "求职", "兼职", "日结", "包吃住", "招工", "用工"]
+    },
+    "automotive_lighting": {
+      "label": "汽车影音/照明",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["汽车影音", "汽车音响", "影音", "音响", "汽车改装", "导航", "车灯", "照明", "灯具", "灯饰", "佛山照明", "洗车", "汽修", "汽车美容", "贴膜"]
+    },
+    "consumer_retail": {
+      "label": "消费零售/生活服务",
+      "strong": false,
+      "allow_keep_override": true,
+      "keywords": ["回收", "置换", "供应链", "酱酒", "传媒", "文化", "特产", "海鲜", "茶业", "茶叶", "食品", "商贸", "贸易", "酒业", "餐饮", "美发", "美容", "摄影", "台球器材", "洗车机"]
+    },
+    "role_accounts": {
+      "label": "角色账号/客服/通用岗位",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["客服", "客户经理", "专员", "顾问", "助理", "接待", "前台", "公众号", "小助手", "机器人", "官方", "服务中心", "预约", "咨询"]
+    },
+    "marketing_spam": {
+      "label": "营销/垃圾信息",
+      "strong": true,
+      "allow_keep_override": false,
+      "keywords": ["广告", "推广", "营销", "微商", "刷单", "返利", "优惠券", "代购", "引流", "涨粉", "开户", "博彩", "彩票"]
+    }
+  },
+  "keep_terms": ["煤矿", "矿业", "煤业", "榆通", "物资", "中煤", "陕煤", "延长", "陕投", "能源", "工程", "科技", "研究院", "研究所", "大学", "学院", "设计院", "自动化", "仪器", "设备", "光纤", "监测", "安全", "生产", "矿用"],
+  "identity": {
+    "phone_regex": "(?<!\\d)(1[3-9]\\d{9})(?!\\d)",
+    "title_terms": ["总", "老师", "经理", "主任", "院长", "书记", "部长", "科长", "队长", "工", "哥", "姐"],
+    "brand_prefixes": ["A", "AA", "AAA", "AAAA"],
+    "brand_terms": ["公司", "集团", "中心", "门店", "厂家", "供应链", "工作室", "机构", "平台", "服务商"]
+  }
+}
