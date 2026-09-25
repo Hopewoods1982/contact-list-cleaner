@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contact List Cleaner"
+  short_description: "Clean and audit exported contact lists"
+  default_prompt: "Use $contact-list-cleaner to classify this contact list, preserve core business contacts, separate low-identity records, and produce a reviewable cleaned copy without modifying the source."
